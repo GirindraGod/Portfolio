@@ -338,7 +338,21 @@ padding-bottom: 10px;
     }
 }
 
-
+@media(max-width:361px){
+    .subele1{
+        transform: translateX(-38px);
+    }
+    .subele12{
+        transform: translateX(-38px);
+    }
+    html{
+        overflow-x:hidden ;
+    }
+    body{
+        width:360px;
+        overflow-x:hidden ;
+    }
+}
 
 
 
