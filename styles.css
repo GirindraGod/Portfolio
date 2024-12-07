@@ -13,6 +13,7 @@ body{
   min-width: 100vw;
   background-color: gray;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  scroll-behavior: smooth;
 }
 
 html{
@@ -476,13 +477,6 @@ nav li:first-child{
 
 
 /*button hover ends*/
-
-
-
-
-
-
-
 
 
 .box1:hover{
@@ -1024,9 +1018,28 @@ border-radius: 15px 15px 0 0;
 
 
 @media (max-width: 1510px) {
-.stack-area {
-  height: auto; 
+
+  .right{
+    transform: translateX(-80px);
+  
+  }
+  .skills{
+    margin-bottom: 80px;
+    margin-top: 80px;
+
+  }
 }
+
+
+
+@media(max-width:1200px){
+.stack-area{
+  display: flex;
+  flex-direction: column;
+  height: 1400px;
+  align-items: center;
+}
+
 
 .card {
   transform: none;
@@ -1045,35 +1058,10 @@ border-radius: 15px 15px 0 0;
   width:0;
 }
 
-.res-skills{
-  visibility: visible;
-  transform: translate(-700px,100px);
-}
-
-.wrapper1{
-  transform: translate(-700px,-485px);
-}
-
-.right{
-  transform: translateX(600px);
-  position: static;
- 
-}
-
-}
-
-
-
-@media(max-width:1200px){
-.stack-area{
-  display: flex;
-  flex-direction: column;
-  
-  align-items: center;
-}
 
 .res-skills{
   transform: translate(-250px,-500px);
+  visibility: visible;
 }
 
 .wrapper1{
@@ -1084,6 +1072,7 @@ border-radius: 15px 15px 0 0;
   transform: translate(-80px,780px);
   position: static;
 }
+
 
 }
 
@@ -1230,9 +1219,26 @@ border-radius: 15px 15px 0 0;
 .probox1:hover{
   z-index: 4;
   width: 1000px;
+
 }
 
+.proplus0{
+  height: 20px;
+  width: 20px;
+  transform: translate(850px,-20px);
+}
 
+.proplus1{
+  height: 20px;
+  width: 20px;
+  transform: translate(850px,-20px);
+}
+
+.proplus2{
+  height: 20px;
+  width: 20px;
+  transform: translate(850px,-20px);
+}
   
 
 
@@ -1276,19 +1282,21 @@ border-radius: 15px 15px 0 0;
   font-size: clamp(10px,1.8vmax,50px);
   transform: translate(10px, 10px);
   padding: 10px;
-
+  width:500px;
 }
 
 .protitle1{
   font-size: clamp(10px,1.8vmax,50px);
   transform: translate(10px, 10px);
   padding: 10px;
+  width:500px;
 }
 
 .protitle0{
   font-size: clamp(10px,1.8vmax,50px);
   transform: translate(10px, 10px);
   padding: 10px;
+  width:500px;
 }
 
 
@@ -1303,7 +1311,7 @@ border-radius: 15px 15px 0 0;
 
 
 .sub-probos2 .sub-p-box2{
-  min-width: 420px;
+  min-width: 400px;
   height: 250px;
   background-color: rgb(255, 255, 255);
   margin:5px 10px 10px 20px;
@@ -1436,6 +1444,15 @@ border-radius: 15px 15px 0 0;
   .probox0:hover{
     width: 500px;
   }
+  .proplus0{
+    transform:translate(450px,-10px);
+  }
+  .proplus1{
+    transform:translate(450px,-10px);
+  }
+  .proplus2{
+    transform:translate(450px,-10px);
+  }
 
 
 }
@@ -1466,6 +1483,24 @@ border-radius: 15px 15px 0 0;
     transform: translateX(53px);
    
     width: 220px;
+  }
+  .proplus0{
+    transform:translate(340px,-1px);
+  }
+  .proplus1{
+    transform:translate(340px,-1px);
+  }
+  .proplus2{
+    transform:translate(340px,-1px);
+  }
+  .protitle0{
+    width: 350px;
+  }
+  .protitle1{
+    width: 350px;
+  }
+  .protitle2{
+    width: 350px;
   }
 
 
@@ -1505,7 +1540,7 @@ border-radius: 15px 15px 0 0;
 
 .inputBox0{
   position:relative;
-  width:350px;
+  width:300px;
   margin-bottom: 20px;
 }
 
@@ -1790,6 +1825,15 @@ footer{
 
 }
 
+@media(max-width:1200px){
+  .conhead1{
+    transform: translate(-60px,220px);
+  }
+  .conhead0{
+    transform: translateX(-80px);
+  }
+}
+
 
 @media(max-width:920px){
   .conhead{
@@ -1835,6 +1879,12 @@ footer{
   .conhead{
     transform: translateX(-60px);
   }
+  .conhead0{
+    transform: translateX(20px);
+  }
+  .contact{
+    width: 760px;
+  }
 }
 
 @media(max-width:430px){
@@ -1851,8 +1901,11 @@ footer{
     transform: translateX(-10px);
   }
   .conhead{
-    transform: translate(-220px,0);
+    transform: translate(-240px,0);
 
+  }
+  .contact{
+    width: 400px;
   }
 }
 
@@ -1871,7 +1924,7 @@ footer{
   z-index: 30;
   animation-name: appear;
   animation-timeline: scroll(y);
-  z-index: 1000;
+  z-index: 200;
   position:fixed;
   visibility: hidden;
 }
@@ -1880,7 +1933,7 @@ footer{
   height: 30px;
   width: 30px;
   transform: translate(10px,10px);
-  z-index: 1000;
+  z-index: 200;
 
 }
 
@@ -1891,7 +1944,7 @@ footer{
     opacity:0;
     display:none;
     position:fixed;
-    z-index: 1000;
+    z-index: 200;
     background: white;
   }
   99%{
@@ -1901,7 +1954,7 @@ footer{
     opacity:1;
     display: block;
     position:fixed;
-    z-index: 1000;
+    z-index: 200;
     visibility: visible;
   }
 }
@@ -2105,6 +2158,12 @@ footer{
   transform: translate(80px,-41px);
 }
 
+@media(max-width:1030px){
+  .navline1{
+    margin-top: 50px;
+  }
+}
+
 @media(max-width:430px){
   
 #toggle5{
@@ -2152,53 +2211,94 @@ footer{
 
 
 
+@media(max-width:361px){
+  .para1{
+    margin:5px;
+  }
 
+  .probox{
+    width: 320px;
+  }
+  .probox0{
+    width: 320px;
+  }
+  .probox1{
+    width: 320px;
+  }
+  .probox2{
+    width: 320px;
+  }
+  .proplus0{
+    transform: translate(280px,-12px);
+  }
+  .proplus1{
+    transform: translate(280px,-12px);
+  }
+  .proplus2{
+    transform: translate(280px,-12px);
+  }
+  .protitle0{
+    width:300px;
+  }
+  .protitle1{
+    width:300px;
+  }
+  .protitle2{
+    width:300px;
+  }
+  .inputbox0{
+    width: 300px;
+  }
+  .wrapper3{
+    padding: 10px;
+    width:250px;
+  }
+  .context1{
+    font-size: 35px;
+    width: 250px;
+  }
+  .contact{
+    width:340px;
+  }
+  .sub-p-box2{
+    width: 340px;
+  }
+  .pro2til{
+    width: 300px;
+  }
+  .pro2til0{
+    width: 400px;
+  }
+  .pro2til1{
+    width: 400px;
+  }
+  .pro2til2{
+    width: 400px;
+  }
+  .probox0:hover{
+    width: 320px;
+  }
+  .probox1:hover{
+    width: 320px;
+  }
+  .toggle5{
+    transform: translate(10px);
+  }
+  html{
+    overflow-x:hidden ;
+  }
+  body{
+    width:360px;
+    overflow-x:hidden ;
+  }
+  #sidebar5{
+    width: 100vw;
+  }
+  #sidebar5 ul{
+    margin:30px 10px 30px 10px;
+  }
+  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 

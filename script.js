@@ -105,7 +105,7 @@ function handleScroll() {
 
 // Function to check screen size and toggle scroll logic
 function checkScreenSize() {
-  if (window.innerWidth > 1510) {
+  if (window.innerWidth > 1010) {
     if (!isScrollActive) {
       isScrollActive = true; // Enable scroll logic
       window.addEventListener("scroll", handleScroll);
